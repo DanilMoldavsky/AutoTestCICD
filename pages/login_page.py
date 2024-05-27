@@ -7,7 +7,7 @@ class LoginPage(BasePage):
     PAGE_URL = Links.LOGIN_PAGE
     
     USERNAME_FIELD = ("xpath", "//input[@name='username']")
-    USERNAME_FIELD = ("xpath", "//input[@name='password']")
+    PASSWORD_FIELD = ("xpath", "//input[@name='password']")
     SUBMIT_BUTTON = ("xpath", "//button[@type='submit']")
     
     @allure.step("Enter login")
